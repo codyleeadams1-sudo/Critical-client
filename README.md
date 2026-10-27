@@ -5,7 +5,10 @@ Red-themed survival QoL client. Press **Right Shift** in game to open the module
 ## Build the .jar
 Requirements: **JDK 25** and **Gradle 9.x** (or just open the folder in IntelliJ IDEA, which sets both up).
 
-    gradle build
+    build.bat   (Windows)  or  ./build.sh  (Linux/macOS)
+
+These check for JDK 25, download Gradle if needed, and put the jar in the dist folder.
+Manual alternative: gradle build
 
 Your mod is `build/libs/criticalclient-1.0.0.jar` (ignore the `-sources` jar).
 Drop it in `.minecraft/mods` together with **Fabric Loader 0.19.5+** and **Fabric API 0.160.5+26.3**.
